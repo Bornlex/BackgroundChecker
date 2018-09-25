@@ -10,47 +10,13 @@ from logger import Logger
 from source import Engineering
 
 
-URL             = "https://repertoire.iesf.fr/n/node/5/items"
-PROFILE_URL     = "https://repertoire.iesf.fr/x/profile?id="
-USER_AGENT      = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:62.0) Gecko/20100101 Firefox/62.0"
-ACCEPT          = "application/json, text/javascript, */*; q=0.01"
-ACCEPT_LANGUAGE = "en-US,en;q=0.5"
-REFERER         = "https://repertoire.iesf.fr/"
-CONTENT_TYPE    = "application/json"
-REQUESTED_WITH  = "XMLHttpRequest"
-CONNECTION      = "keep-alive"
-DATA            = {
-    "view": 1,
-    "layout": 1,
-    "sort": 46,
-    "dir": 1,
-    "page": 1,
-    "limit": 100,
-    "find": None,
-    "filter": None
-}
-
-HEADERS = {
-    "User-Agent"      : USER_AGENT,
-    "Accept"          : ACCEPT,
-    "Accept-Language" : ACCEPT_LANGUAGE,
-    "Referer"         : REFERER,
-    "Content-Type"    : CONTENT_TYPE,
-    "X-Requested-With": REQUESTED_WITH,
-    "Connection"      : CONNECTION
-}
-
-PROFILE_HEADERS = {
-    "User-Agent"      : USER_AGENT,
-    "Accept"          : ACCEPT,
-    "Accept-Language" : ACCEPT_LANGUAGE,
-    "Referer"         : REFERER,
-    "Content-Type"    : CONTENT_TYPE,
-    "X-Requested-With": REQUESTED_WITH,
-    "Connection"      : CONNECTION
-}
-
 if __name__ == "__main__":
+    print("██████╗  █████╗  ██████╗██╗  ██╗ ██████╗ ██████╗  ██████╗ ██╗   ██╗███╗   ██╗██████╗      ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗███████╗██████╗")
+    print("██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝ ██╔══██╗██╔═══██╗██║   ██║████╗  ██║██╔══██╗    ██╔════╝██║  ██║██╔════╝██╔════╝██║ ██╔╝██╔════╝██╔══██╗")
+    print("██████╔╝███████║██║     █████╔╝ ██║  ███╗██████╔╝██║   ██║██║   ██║██╔██╗ ██║██║  ██║    ██║     ███████║█████╗  ██║     █████╔╝ █████╗  ██████╔╝")
+    print("██╔══██╗██╔══██║██║     ██╔═██╗ ██║   ██║██╔══██╗██║   ██║██║   ██║██║╚██╗██║██║  ██║    ██║     ██╔══██║██╔══╝  ██║     ██╔═██╗ ██╔══╝  ██╔══██╗")
+    print("██████╔╝██║  ██║╚██████╗██║  ██╗╚██████╔╝██║  ██║╚██████╔╝╚██████╔╝██║ ╚████║██████╔╝    ╚██████╗██║  ██║███████╗╚██████╗██║  ██╗███████╗██║  ██║")
+    print("╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═════╝      ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝")
     print("* running...")
     print("* how are you today?")
     print("* 42")
