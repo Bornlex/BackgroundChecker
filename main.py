@@ -7,7 +7,7 @@ import os
 import json
 
 from logger import Logger
-from source import Engineering
+from source import Engineering, EDJ
 
 
 if __name__ == "__main__":
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     print("* 42")
     print("* hum, not that good huh?")
     logger = Logger(1)
-    sources = [Engineering(logger)]
+    sources = [Engineering(logger), EDJ(logger)]
     while True:
         name = input("name: ")
         name = name.strip()
@@ -34,14 +34,12 @@ if __name__ == "__main__":
             already_inside = len(structured)
             tmp = source.GetProfile(name)
             logger.Log("INFO", "__main__", f"profiles: {tmp}")
-            old_keys = []
+            tmpdic = {}
             for key in tmp:
-                tmp[key + already_inside] = tmp[key]
+                tmpdic[key + already_inside] = tmp[key]
                 source_mapping[key + already_inside] = source
-                old_keys.append(key)
-            if already_inside != 0:
-                for key in old_keys:
-                    del tmp[key]
+            tmp = tmpdic.copy()
+            del tmpdic
             structured = {**structured, **tmp}
         if len(structured) == 0:
             print("* no profile found, sorry buddy :/")

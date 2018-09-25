@@ -105,6 +105,10 @@ class Person(object):
     def Enriched(self):
         return self._enriched
 
+    @Enriched.setter
+    def Enriched(self, enriched):
+        self._enriched = enriched
+
     @property
     def FullProfile(self):
         string = ""
