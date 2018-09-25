@@ -29,7 +29,7 @@ I developed it using **Python 3.6**. I did not test it on many versions, but it 
 It requires the following non-core modules:
 - requests
 
-You can install it through ![pip](https://pypi.org/project/pip/)
+You can install it through ![pip](https://pypi.org/project/pip/).
 
 ## Usage
 
