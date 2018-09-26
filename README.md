@@ -60,6 +60,9 @@ There is no automated tests for now. But if the program is running and you can a
 - Create a UI
 - Create automated tests
 - Develop new data sources for business schools
+- Save results and flush them to a file
+- Keep history of commands typed
+- Autocompletion
 
 ## What it look like
 
